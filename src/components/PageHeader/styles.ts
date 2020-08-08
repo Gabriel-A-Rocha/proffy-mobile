@@ -18,8 +18,10 @@ const styles = StyleSheet.create({
     color: "#fff",
     fontSize: 24,
     lineHeight: 32,
-    maxWidth: 160,
-    marginVertical: 40,
+    maxWidth: 250,
+    /* marginVertical: 40, */
+    marginTop: 30,
+    marginBottom: 40,
   },
 });
 

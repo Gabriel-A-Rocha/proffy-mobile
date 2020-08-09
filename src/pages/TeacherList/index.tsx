@@ -11,6 +11,7 @@ import AsyncStorage, {
 //import { Teacher } from "../../components/TeacherItem/index";
 
 import styles from "./styles";
+import { useFocusEffect } from "@react-navigation/native";
 
 function TeacherList() {
   const [teachers, setTeachers] = useState([]);
@@ -33,6 +34,12 @@ function TeacherList() {
       }
     });
   }
+
+  /*   useFocusEffect(
+    React.useCallback(() => {
+      loadFavorites();
+    }, [])
+  ); */
 
   function handleToggleFiltersVisible() {
     setFiltersVisible(!filtersVisible);
